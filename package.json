@@ -1,0 +1,30 @@
+{
+  "name": "tp1-numen-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagodmorales/Tp1-Numen-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiagodmorales/Tp1-Numen-Backend/issues"
+  },
+  "homepage": "https://github.com/santiagodmorales/Tp1-Numen-Backend#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jwt-simple": "^0.5.6",
+    "luxon": "^3.0.4",
+    "mongoose": "^6.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
