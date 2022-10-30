@@ -5,15 +5,10 @@ const routes = require('./routes');
 dotenv.config();
 const app = express();
 
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 app.use('/api', routes);
-
-
-//app.get('/fibonacci', (req, res) => {
- //   res.status(200).send("Hola mundo!")
-//})
 
 
 

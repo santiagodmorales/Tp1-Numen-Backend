@@ -1,5 +1,6 @@
+
 const getFib = (req, res) => {
-  let fib = [0, 1];
+  let fibSerie = [0, 1];
   const { num } = req.params;
   let limit = 20;
   let query = parseInt(num);
@@ -7,17 +8,17 @@ const getFib = (req, res) => {
   try {
     if (!num) {
         for (let i = 2; i < limit; i++) {
-            fib.push(fib[i - 1] + fib[i - 2]);
+            fibSerie.push(fibSerie[i - 1] + fibSerie[i - 2]);
           }  
-      return res.status(200).send(fib);
+      return res.status(200).send(fibSerie);
     }
 
     if (Number.isInteger(query)) {
       limit = query;
       for (let i = 2; i < limit; i++) {
-        fib.push(fib[i - 1] + fib[i - 2]);
+        fibSerie.push(fibSerie[i - 1] + fibSerie[i - 2]);
       } 
-      return res.status(200).send(fib);
+      return res.status(200).send(fibSerie);
     } else {
       res
         .status(411)
