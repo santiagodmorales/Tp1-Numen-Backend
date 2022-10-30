@@ -9,7 +9,7 @@ routes.get('/fibonacci/:num?', fibController.getFib);
 routes.get('/users/', userController.getUsers);
 routes.get('/users/:id', userController.getUserById)
 routes.post('/users', createUserMiddleware, userController.createUser);
-routes.put('/users/:id', userController.updateUser);
+routes.put('/users/:id', createUserMiddleware, userController.updateUser);
 routes.delete('/users/:id', userController.deleteUser);
 
 
